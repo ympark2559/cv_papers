@@ -136,6 +136,7 @@ conv5_third_sum=o_con5_3_1_3+...+o_con5_3_32_3
 conv5_third=conv5_second+conv5_third_sum
 
 # ---------------
+# global average pooling
 conv5_third=g_a_p(conv5_third)
 conv5_third=fc(conv5_third)
 conv5_third=softmax(conv5_third)
